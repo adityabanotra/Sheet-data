@@ -1,0 +1,42 @@
+body{
+	background-color: black;
+}
+
+:root {
+	--color-form-highlight: #EEEEEE;
+  }
+.container {
+	max-width: 1000px;
+	margin-right:auto;
+	margin-left:auto;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	min-height:100vh;
+}
+
+.table {
+	width:100%;
+	border:1px solid --color-form-highlight;
+}
+
+
+
+.table-row {
+	display:flex;
+	width:100%;
+	padding: 18px 0;
+	
+	
+}
+.table-row:nth-child(odd) {
+	background: #FFF
+}
+.table-data, .header__item {
+	flex: 1 1 20%;
+	text-align:center;
+}
+
+.header__item {
+	text-transform:uppercase;
+}
