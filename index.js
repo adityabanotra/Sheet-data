@@ -14,7 +14,7 @@ app.use(express.urlencoded({extended:true}));
 app.use(express.static('./assets'));
 
 //Using routes and controllers for all the further operations
-app.use('/', require('./routes/index'));
+app.use('/', require('./Routes/index'));
 
 
 app.listen(port,function(err){
