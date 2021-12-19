@@ -20,18 +20,14 @@ body{
 	border:1px solid --color-form-highlight;
 }
 
-
-
 .table-row {
 	display:flex;
 	width:100%;
 	padding: 18px 0;
-	
+	background-color: blanchedalmond;
 	
 }
-.table-row:nth-child(odd) {
-	background: #FFF
-}
+
 .table-data, .header__item {
 	flex: 1 1 20%;
 	text-align:center;

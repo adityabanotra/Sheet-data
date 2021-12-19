@@ -5,13 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="/css/home.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+          
+            $('#update').click(function() {
+              $('#update-form').toggle("slide");
+            });
+        });
+    </script>
   </head>
   <body>
-    <h1>Add</h1>
-    <form action="/add" method="POST">
-      <input type="text" name="name">
-      <input type="text" name="score" placeholder="Performance Score">
-      <button type="submit">Submit</button>
-    </form>
+    <h1>Internship Assignment - SDE Fullstack</h1>
+    <a href="/retrieve">Retrieve the table</a>
+    <h3 id="update" class="forminfo">Add data to the sheet</h3>
+        <div id="update-form">
+            <form action="/add"  method="POST"> <br>
+                <div class="forminfo">Avatar Name</div>
+                <input class="si" type="text" name="name" placeholder="Name"required> <br> <br>
+                <div class="forminfo">Score</div>
+                <input class="si" type="number" name="score" placeholder="Performance Score"   required > <br> <br>
+                
+                <input type="submit" value="Add">
+            </form>
+        </div>
+
+    
   </body>
 </html>
