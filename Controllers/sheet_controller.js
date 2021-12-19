@@ -1,4 +1,4 @@
-var {google} = require('GoogleApis');
+var {google} = require('googleapis');
 
 //rendring home page
 module.exports.home = function(req,res){
