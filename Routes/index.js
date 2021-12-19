@@ -3,7 +3,7 @@ const express = require('express');
 //Using express Router
 const Router = express.Router();
 
-const sheetController = require('../controllers/sheet_controller');
+const sheetController = require('../Controllers/sheet_controller.js');
 console.log('route loaded');
 
 Router.get('/', sheetController.home);
